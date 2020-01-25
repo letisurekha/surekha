@@ -1,0 +1,21 @@
+<div>
+    <table class="table">
+        <thead>
+          <th>Sn</th>
+          <th>NAME</th>
+          <th>DESCRPTION</th>
+          <th>TAGS</th>
+          <th>FILENAME</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let m1 of mediaInfor; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{m1.name}}</td>
+            <td>{{m1.descrption}}</td>
+            <td>{{m1.tags}}</td>
+            <td>{{m1.fname}}</td>
+          </tr>
+        </tbody>
+    </table>
+    
+</div>

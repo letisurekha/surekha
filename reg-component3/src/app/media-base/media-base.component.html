@@ -1,0 +1,23 @@
+<div class="row"><h1>Media</h1></div>
+<div class="row">
+    <div class="col"><label for="">Name</label></div>
+    <div class="col"><input type="text" #name/></div>
+</div>
+<div class="row">
+    <div class="col"><label for="">Descrption</label></div>
+    <div class="col"><input type="text" #des/></div>
+</div>
+ <div class="row">
+    <div class="col"><label for="">Tags</label></div>
+    <div class="col"><input type="text" #tag/></div>
+</div>
+ <div class="row">
+    <div class="col"><label for="">Filename</label></div>
+    <div class="col"><input type="text" #fn/></div>
+</div>
+<div class="row">
+
+    <div class="col"><input type="button" value="Save" (click)="saveChanges(name,des,tag,fn)" /></div>
+</div>
+<hr/>
+<media-base2 [mediaInfor]="mediaInformation" > </media-base2>
